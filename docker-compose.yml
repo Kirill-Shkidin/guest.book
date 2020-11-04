@@ -1,0 +1,65 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: laravel
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: adservice
+    container_name: adservice-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - adservice
+  db:
+    image: mysql:5.7
+    container_name: adservice-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
+    networks:
+      - adservice
+  queue:
+    image: redis:5-alpine
+    container_name: adservice-queue
+    networks:
+      - adservice
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: adservice_pma
+    links:
+      - db
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    networks:
+      - adservice
+  nginx:
+    image: nginx:alpine
+    container_name: adservice-nginx
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d/
+    networks:
+      - adservice
+networks:
+  adservice:
+    driver: bridge
