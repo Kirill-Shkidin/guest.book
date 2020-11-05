@@ -47,6 +47,8 @@ services:
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
     restart: always
+    ports:
+      - 8183:80
     networks:
       - adservice
   nginx:
