@@ -36,8 +36,6 @@ class AddImgUrl implements ShouldQueue
     {
       $pack = $request->only('img1', 'img2', 'img3');
       $pack['id'] = $this->id;
-//      dd($data::query()->find($this->id));
-
 
       return $data::query()->find($this->id)->fill($request->only('img1', 'img2', 'img3'))->save();
     }
