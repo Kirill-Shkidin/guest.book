@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="262a27b7-9c10-4ae9-8ef5-2c4e4aaabdeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/AddImgUrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/AddImgUrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Ad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Ad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +177,7 @@
       <updated>1604318017142</updated>
       <workItem from="1604318018247" duration="1091000" />
       <workItem from="1604323194372" duration="44967000" />
-      <workItem from="1604587122401" duration="4539000" />
+      <workItem from="1604587122401" duration="6455000" />
     </task>
     <servers />
   </component>
@@ -195,10 +193,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="271" y="23" width="769" height="796" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1604627937946" />
-    <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604403620987">
+    <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604629372552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604403620987" />
+    <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604629372552" />
     <state x="515" y="365" key="NewPhpFileDialog" timestamp="1604402196115">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

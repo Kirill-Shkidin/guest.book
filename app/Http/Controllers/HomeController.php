@@ -46,15 +46,7 @@ class HomeController extends Controller
     return view('index')->with(['data' => Ad::query()->paginate(10)]);
   }
 
-  public function show(Ad $Ad)
-  {
-    return view('one')->with(['data' => $Ad->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)]);
-  }
 
-  public function showAll()
-  {
-    return view('one')->with(['data' => Ad::query()->get()->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)]);
-  }
 
   public function create(Ad $data)
   {
