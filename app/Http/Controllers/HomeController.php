@@ -6,8 +6,6 @@ use App\Helpers\General\CollectionHelper;
 use App\Http\Requests\StoreHomeAd;
 use App\Jobs\AddImgUrl;
 use App\Models\Ad;
-use Illuminate\Http\Request;
-use Illuminate\Queue\Jobs\Job;
 
 class HomeController extends Controller
 {
@@ -34,19 +32,19 @@ class HomeController extends Controller
 
   public function sort($sort)
   {
-    if ($sort == 'price_up') {
-      return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortBy('price'), 10)]);
-    } elseif ($sort == 'price_down') {
-      return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortByDesc('price'), 10)]);
-    } elseif ($sort == 'date_up') {
-      return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortBy('created_at'), 10)]);
-    } elseif ($sort == 'date_down') {
-      return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortByDesc('created_at'), 10)]);
-    }
+    //Sorting Ads on main page by clicking buttons
+    switch ($sort):
+      case 'price_up':
+        return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortBy('price'), 10)]);
+      case 'price_down':
+        return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortByDesc('price'), 10)]);
+      case 'date_up':
+        return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortBy('created_at'), 10)]);
+      case 'date_down':
+        return view('index')->with(['data' => CollectionHelper::paginate(Ad::query()->get()->sortByDesc('created_at'), 10)]);
+    endswitch;
     return view('index')->with(['data' => Ad::query()->paginate(10)]);
   }
-
-
 
   public function create(Ad $data)
   {

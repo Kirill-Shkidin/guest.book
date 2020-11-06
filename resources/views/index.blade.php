@@ -39,7 +39,7 @@ max-width: 100%">
                   </div>
                 </div>
                 <p>{{ $item->price }} $</p>
-                <p>{{ $item->created_at }} $</p>
+                <p>{{ $item->created_at }}</p>
                 <a href="{{ route('ad.one', $item) }}" class=" btn bg-success">API</a>
               </li>
             </div>
