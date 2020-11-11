@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Ad;
+use App\Models\Review;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class AdsSeeder extends Seeder
+class ReviewsSeeder extends Seeder
 {
   /**
    * Run the database seeds.
@@ -15,8 +15,8 @@ class AdsSeeder extends Seeder
    */
   public function run()
   {
-//    dd(Ad::factory()->times(1)->make()->toArray());
-    DB::table('ads')->insert(Ad::factory()->count(20)->make()->toArray());
+//    dd(Review::factory()->count(1)->create()->toArray());
+    DB::table('reviews')->insert(Review::factory()->count(1)->make()->toArray());
   }
 
 }

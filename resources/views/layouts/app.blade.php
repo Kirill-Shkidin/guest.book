@@ -7,7 +7,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>AdService Страница @yield('title')</title>
+  <title>{{ config('app.name') }} Страница @yield('title')</title>
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>

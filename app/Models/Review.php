@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ad extends Model
+class Review extends Model
 {
   use HasFactory;
 
   public $timestamps = false;
 
-  protected $fillable = ['name','desc','price', 'img1', 'img2', 'img3'];
+  protected $fillable = ['author_name', 'author_ip', 'desc', 'likes'];
 
 }

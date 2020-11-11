@@ -14,13 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ApiController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/sort/{sort}', [HomeController::class, 'sort'])->name('sort');
 Route::get('/create', [HomeController::class, 'create'])->name('create');
 Route::post('/store', [HomeController::class, 'store'])->name('store');
-
-Route::get('/ads', [ApiController::class, 'index'])->name('show.all');
-Route::get('/ads/{ad}', [ApiController::class, 'show'])->name('ad.one');
-
+Route::get('/like/{review}', [HomeController::class, 'like'])->name('like');
+Route::get('/show/{review}', [HomeController::class, 'show'])->name('one');
+Route::get('/next/{review}', [HomeController::class, 'next'])->name('next');
+Route::get('/previous/{review}', [HomeController::class, 'previous'])->name('previous');
 

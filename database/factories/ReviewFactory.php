@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Ad;
+use App\Models\Review;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class AdFactory extends Factory
+class ReviewFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Ad::class;
+    protected $model = Review::class;
 
     /**
      * Define the model's default state.
@@ -22,12 +22,10 @@ class AdFactory extends Factory
     public function definition()
     {
       return [
-        'name' => $this->faker->realText(rand(30, 200)),
-        'desc' => $this->faker->realText(rand(30, 1000)),
-        'price' => $this->faker->numberBetween(1,10000),
-        'img1' => 'https://avatars.mds.yandex.net/get-mpic/1767151/img_id313886601445063822.jpeg/orig',
-        'img2' => '',
-        'img3' => '',
+        'author_name' => $this->faker->name(),
+        'author_ip' => $this->faker->ipv4,
+        'desc' => $this->faker->realText(300),
+        'likes' => $this->faker->numberBetween(0,25),
         'created_at' => now(),
         'updated_at' => now(),
       ];

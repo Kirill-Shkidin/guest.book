@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Ad;
+use App\Models\Review;
 use Illuminate\Console\Command;
 
 class showOneAd extends Command
@@ -38,6 +38,6 @@ class showOneAd extends Command
      */
     public function handle()
     {
-      return $this->line(Ad::query()->find($this->argument('id'))->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+      return $this->line(Review::query()->find($this->argument('id'))->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     }
 }

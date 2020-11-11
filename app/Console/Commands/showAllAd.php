@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Ad;
+use App\Models\Review;
 use Illuminate\Console\Command;
 
 class showAllAd extends Command
@@ -38,6 +38,6 @@ class showAllAd extends Command
      */
     public function handle()
     {
-      return $this->line(Ad::query()->get()->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+      return $this->line(Review::query()->get()->toJson(JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     }
 }

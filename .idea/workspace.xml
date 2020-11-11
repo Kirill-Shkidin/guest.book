@@ -4,6 +4,23 @@
     <list default="true" id="262a27b7-9c10-4ae9-8ef5-2c4e4aaabdeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/showAllAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/showAllAd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/showOneAd.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/showOneAd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreHomeAd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/AddImgUrl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Ad.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AdFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReviewFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_02_144037_create_ad_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_02_144037_create_review_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/AdsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ReviewsSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/one.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/one.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +193,8 @@
       <updated>1604318017142</updated>
       <workItem from="1604318018247" duration="1091000" />
       <workItem from="1604323194372" duration="44967000" />
-      <workItem from="1604587122401" duration="7586000" />
+      <workItem from="1604587122401" duration="7855000" />
+      <workItem from="1605018711916" duration="18634000" />
     </task>
     <servers />
   </component>
@@ -188,10 +206,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="432" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1604584665309" />
-    <state x="271" y="23" width="769" height="796" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604627937946">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="316" y="27" width="769" height="796" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605062272099">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="271" y="23" width="769" height="796" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1604627937946" />
+    <state x="316" y="27" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1605062272099" />
     <state x="392" y="155" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604629372552">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
